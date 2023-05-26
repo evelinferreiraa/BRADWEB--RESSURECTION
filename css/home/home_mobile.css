@@ -69,11 +69,12 @@
 
 .background {
   background-color: white;
-  height: 500px;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .background h3 {
@@ -97,8 +98,12 @@
 
 .background a {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  width: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  position: static;
+  row-gap: 50px;
 }
 
 .background img {
